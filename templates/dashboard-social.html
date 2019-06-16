@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	{% include "common/base.html" %}
+
+	<!--
+
+	TABLE OF CONTENTS.
+	
+	Use search to find needed section.
+	
+	===================================================================
+	
+	|  01. #CSS Links                |  all CSS links and file paths  |
+	|  02. #FAVICONS                 |  Favicon links and file paths  |
+	|  03. #GOOGLE FONT              |  Google font link              |
+	|  04. #APP SCREEN / ICONS       |  app icons, screen backdrops   |
+	|  05. #BODY                     |  body tag                      |
+	|  06. #HEADER                   |  header tag                    |
+	|  07. #PROJECTS                 |  project lists                 |
+	|  08. #TOGGLE LAYOUT BUTTONS    |  layout buttons and actions    |
+	|  09. #MOBILE                   |  mobile view dropdown          |
+	|  10. #SEARCH                   |  search field                  |
+	|  11. #NAVIGATION               |  left panel & navigation       |
+	|  12. #MAIN PANEL               |  main panel                    |
+	|  13. #MAIN CONTENT             |  content holder                |
+	|  14. #PAGE FOOTER              |  page footer                   |
+	|  15. #SHORTCUT AREA            |  dropdown shortcuts area       |
+	|  16. #PLUGINS                  |  all scripts and plugins       |
+	
+	===================================================================
+	
+	-->
+	
+	<!-- #BODY -->
+	<!-- Possible Classes
+
+		* 'smart-style-{SKIN#}'
+		* 'smart-rtl'         - Switch theme mode to RTL
+		* 'menu-on-top'       - Switch to top navigation (no DOM change required)
+		* 'no-menu'			  - Hides the menu completely
+		* 'hidden-menu'       - Hides the main menu but still accessable by hovering over left edge
+		* 'fixed-header'      - Fixes the header
+		* 'fixed-navigation'  - Fixes the main menu
+		* 'fixed-ribbon'      - Fixes breadcrumb
+		* 'fixed-page-footer' - Fixes footer
+		* 'container'         - boxed layout mode (non-responsive: will not work with fixed-navigation & fixed-ribbon)
+	-->
+	<body class="">
+
+        {% include "common/common.html" %}
+
+		<!-- MAIN PANEL -->
+		<div id="main" role="main">
+
+            {% include "common/topnav.html" %}
+
+			<!-- MAIN CONTENT -->
+			<div id="content">
+
+				{% include "common/commoncontent.html" %}
+
+				<!--
+				The ID "widget-grid" will start to initialize all widgets below
+				You do not need to use widgets if you dont want to. Simply remove
+				the <section></section> and you can use wells or panels instead
+				-->
+
+				<!-- widget grid -->
+				<section id="widget-grid" class="">
+
+					<!-- row -->
+
+					<div class="row">
+
+						<!-- a blank row to get started -->
+						<div class="col-sm-6 col-lg-4">
+
+							<!-- your contents here -->
+							<div class="panel panel-default">
+								<div class="panel-body status">
+									<div class="who clearfix">
+										<img src="/static/img/avatars/5.png" alt="img" class="online">
+										<span class="name"><b>Karrigan Mean</b> shared a photo</span>
+										<span class="from"><b>1 days ago</b> via Mobile, Sydney, Australia</span>
+									</div>
+									<div class="image"><img src="/static/img/realestate/6.png" alt="img">
+									</div>
+									<ul class="links">
+										<li>
+											<a href="javascript:void(0);"><i class="fa fa-thumbs-o-up"></i> Like</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);"><i class="fa fa-comment-o"></i> Comment</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);"><i class="fa fa-share-square-o"></i> Share</a>
+										</li>
+									</ul>
+									<ul class="comments">
+										<li>
+											<img src="/static/img/avatars/sunny.png" alt="img" class="online">
+											<span class="name">John Doe</span>
+											Looks like a nice house, when did you get it? Are we having the party there next week? ;)
+										</li>
+										<li>
+											<img src="/static/img/avatars/2.png" alt="img" class="online">
+											<span class="name">Alice Wonder</span>
+											Seems cool.
+										</li>
+										<li>
+											<img src="/static/img/avatars/sunny.png" alt="img" class="online">
+											<input type="text" class="form-control" placeholder="Post your comment...">
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel panel-default">
+								<div class="panel-body status">
+									<div class="who clearfix">
+										<h4>See anyone you know? Connect with them</h4>
+									</div>
+									<div class="row">
+										<div class="text">
+											<div class="col-sm-12 col-md-6 col-lg-4">
+												<div class="well text-center connect">
+													<img src="/static/img/avatars/female.png" alt="img" class="margin-bottom-5 margin-top-5">
+													<br>
+													<span class="font-xs"><b>Jennifer Lezly</b></span>
+													<a href="javascript:void(0);" class="btn btn-xs btn-success margin-top-5 margin-bottom-5"> <span class="font-xs">Connect</span> </a>
+												</div>
+											</div>
+											<div class="col-sm-12 col-md-6 col-lg-4">
+												<div class="well text-center connect">
+													<img src="/static/img/avatars/female.png" alt="img" class="margin-bottom-5 margin-top-5">
+													<br>
+													<span class="font-xs"><b>Jennifer Lezly</b></span>
+													<a href="javascript:void(0);" class="btn btn-xs btn-success margin-top-5 margin-bottom-5"> <span class="font-xs">Connect</span> </a>
+												</div>
+											</div>
+											<div class="col-sm-12 col-md-6 col-lg-4">
+												<div class="well text-center connect">
+													<img src="/static/img/avatars/female.png" alt="img" class="margin-bottom-5 margin-top-5">
+													<br>
+													<span class="font-xs"><b>Jennifer Lezly</b></span>
+													<a href="javascript:void(0);" class="btn btn-xs btn-success margin-top-5 margin-bottom-5"> <span class="font-xs">Connect</span> </a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<ul class="links text-right">
+										<li class="">
+											<a href="javascript:void(0);">Find people you know <i class="fa fa-arrow-right"></i> </a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="col-sm-6 col-lg-4">
+
+							<div class="panel panel-default">
+								<div class="panel-body status">
+									<div class="who clearfix">
+										<img src="/static/img/avatars/sunny.png" alt="img" class="online">
+										<span class="name"><b>John Doe</b> sent you a message</span>
+										<span class="from"><b>1 days ago</b> via Mobile, Dubai</span>
+									</div>
+									<div class="text">
+										Just landed in Dubai. My body must have lost like 4 liters of moisture, its 50 degrees here!!
+									</div>
+									<ul class="links">
+										<li>
+											<a href="javascript:void(0);"><i class="fa fa-comment"></i> Reply</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);"><i class="fa fa-share-square-o"></i> Share</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel panel-default">
+								<div class="panel-body status smart-form vote">
+									<div class="who clearfix">
+										<img src="/static/img/avatars/3.png" alt="img" class="offline">
+										<span class="name"><b>Alliz Yaen</b> started a question poll</span>
+										<span class="from"><b>2 days ago</b> via Mobile, Sydney, Australia</span>
+									</div>
+									<div class="image">
+										<strong>How did you guys like the movie <i>"Albert The Einstine?"</i> I reckon it was an awesome movie! </strong>
+									</div>
+									<ul class="comments">
+										<li>
+											<label class="radio">
+												<input type="radio" name="radio">
+												<i></i>It was a great movie! </label>
+										</li>
+										<li>
+											<label class="radio">
+												<input type="radio" name="radio">
+												<i></i>The Movie could have been better... </label>
+										</li>
+										<li>
+											<label class="radio">
+												<input type="radio" name="radio">
+												<i></i>It was a boring documentry :( </label>
+										</li>
+										<li class="text-right">
+											<a href="javascript:void(0);" class="btn btn-xs btn-primary">Submit Vote</a>
+										</li>
+									</ul>
+
+									<ul class="links">
+										<li>
+											<a href="javascript:void(0);"><i class="fa fa-thumbs-o-up"></i> Like</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);"><i class="fa fa-comment-o"></i> Comment</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);"><i class="fa fa-share-square-o"></i> Share</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel panel-default">
+
+								<div class="panel-body status">
+
+									<div class="who clearfix">
+										<h4>Latest Forum Posts</h4>
+									</div>
+
+									<div class="who clearfix">
+										<img src="/static/img/avatars/2.png" alt="img" class="busy">
+										<span class="name font-sm"> <span class="text-muted">Posted by</span> <b> Karrigan Mean <span class="pull-right font-xs text-muted"><i>3 minutes ago</i></span> </b>
+											<br>
+											<a href="javascript:void(0);" class="font-md">Business Requirement Docs</a> </span>
+									</div>
+
+									<div class="who clearfix">
+										<img src="/static/img/avatars/3.png" alt="img" class="offline">
+										<span class="name font-sm"> <span class="text-muted">Posted by</span> <b> Alliz Yaen <span class="pull-right font-xs text-muted"><i>2 days ago</i></span> </b>
+											<br>
+											<a href="javascript:void(0);" class="font-md">Maecenas nec odio et ante tincidun</a> </span>
+									</div>
+
+									<div class="who clearfix">
+										<img src="/static/img/avatars/4.png" alt="img" class="away">
+										<span class="name font-sm"> <span class="text-muted">Posted by</span> <b> Barley Kartzukh <span class="pull-right font-xs text-muted"><i>1 month ago</i></span> </b>
+											<br>
+											<a href="javascript:void(0);" class="font-md">Tincidun nec Gasket Mask </a> </span>
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="col-sm-6 col-lg-4">
+
+							<div class="panel panel-default">
+								<div class="panel-body status">
+									<div class="who clearfix">
+										<img src="/static/img/avatars/sunny.png" alt="img" class="busy">
+										<span class="name"><b>You</b> shared a blog</span>
+										<span class="from"><b>1 days ago</b> via Mobile, Sydney, Australia</span>
+									</div>
+									<div class="text">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											Quisque in mauris elit. Ut nec arcu pretium eros varius porta vitae sit amet ipsum. Suspendisse porttitor, libero in rutrum pretium, lectus arcu maximus massa, ut condimentum metus libero laoreet lectus. Phasellus a lectus pulvinar, lacinia sem quis, suscipit turpis.
+											<br>
+											<br>
+											Nam ipsum orci, blandit in lectus ut, viverra vehicula nisl. Proin eu arcu ut neque tempus viverra nec ac tellus. <strong>[</strong><a href="javascript:void(0);">Keep reading</a><strong>]</strong>
+									</div>
+									<ul class="links">
+										<li>
+											<a href="javascript:void(0);"><i class="fa fa-thumbs-o-up"></i> Like</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);"><i class="fa fa-comment-o"></i> Comment</a>
+										</li>
+										<li>
+											<a href="javascript:void(0);"><i class="fa fa-share-square-o"></i> Share</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel panel-default">
+								<div class="panel-body status">
+									<div class="who clearfix">
+										<h4>Live Twitter Feed</h4>
+									</div>
+									<div class="text">
+
+										<blockquote class="twitter-tweet">
+											<p lang="en" xml:lang="en">
+												Sunsets don’t get much better than this one over <a href="https://twitter.com/GrandTetonNPS" target="_blank">@GrandTetonNPS</a>. <a href="https://twitter.com/hashtag/nature?src=hash" target="_blank">#nature</a> <a href="https://twitter.com/hashtag/sunset?src=hash">#sunset</a> <a href="http://t.co/YuKy2rcjyU" target="_blank">pic.twitter.com/YuKy2rcjyU</a>
+											</p>
+											— US Dept of Interior (@Interior) <a href="https://twitter.com/Interior/status/463440424141459456" target="_blank">May 5, 2014</a>
+										</blockquote>
+
+									</div>
+									<ul class="links text-right">
+										<li class="">
+											<a href="javascript:void(0);">Next <i class="fa fa-arrow-right"></i> </a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel panel-default">
+								<div class="panel-body status">
+									<div class="who clearfix">
+										<h4>Live Chat</h4>
+									</div>
+									
+									<div id="chat-body" class="chat-body custom-scroll">
+										<ul>
+											<li class="message">
+												<img src="/static/img/avatars/5.png" class="online" alt="">
+												<div class="message-text">
+													<time>
+														2014-01-13
+													</time> <a href="javascript:void(0);" class="username">Sadi Orlaf</a> Hey did you meet the new board of director? He's a bit of an geek if you ask me...anyway here is the report you requested. I am off to launch with Lisa and Andrew, you wanna join?
+													<p class="chat-file row">
+														<b class="pull-left col-sm-6"> <!--<i class="fa fa-spinner fa-spin"></i>--> <i class="fa fa-file"></i> report-2013-demographic-report-annual-earnings.xls </b>
+														<span class="col-sm-6 pull-right"> <a href="javascript:void(0);" class="btn btn-xs btn-default">cancel</a> <a href="javascript:void(0);" class="btn btn-xs btn-success">save</a> </span>
+													</p>
+												</div>
+											</li>
+											<li class="message">
+												<img src="/static/img/avatars/sunny.png" class="online" alt="">
+												<div class="message-text">
+													<time>
+														2014-01-13
+													</time> <a href="javascript:void(0);" class="username">John Doe</a> Haha! Yeah I know what you mean. Thanks for the file Sadi! <i class="fa fa-smile-o txt-color-orange"></i> 
+												</div>
+											</li>
+										</ul>
+									</div>
+
+									<div class="chat-footer">
+
+											<!-- CHAT TEXTAREA -->
+											<div class="textarea-div">
+
+												<div class="typearea">
+													<textarea placeholder="Write a reply..." id="textarea-expand" class="custom-scroll"></textarea>
+												</div>
+
+											</div>
+
+											<!-- CHAT REPLY/SEND -->
+											<span class="textarea-controls">
+												<button class="btn btn-sm btn-primary pull-right">
+													Reply
+												</button> <span class="pull-right smart-form" style="margin-top: 3px; margin-right: 10px;"> <label class="checkbox pull-right">
+														<input type="checkbox" name="subscription" id="subscription">
+														<i></i>Press <strong> ENTER </strong> to send </label> </span> <a href="javascript:void(0);" class="pull-left"><i class="fa fa-camera fa-fw fa-lg"></i></a> </span>
+
+										</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<!-- end row -->
+
+				</section>
+				<!-- end widget grid -->
+
+			</div>
+			<!-- END MAIN CONTENT -->
+
+		</div>
+		<!-- END MAIN PANEL -->
+
+
+
+		<!--================================================== -->
+
+		<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
+		<script data-pace-options='{ "restartOnRequestAfter": true }' src="/static/js/plugin/pace/pace.min.js"></script>
+
+		<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+		{% include "common/basejs.html" %}
+
+		<!-- IMPORTANT: APP CONFIG -->
+		<script src="/static/js/app.config.js"></script>
+
+		<!-- JS TOUCH : include this plugin for mobile drag / drop touch events-->
+		<script src="/static/js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script>
+
+		<!-- BOOTSTRAP JS -->
+		<script src="/static/js/bootstrap/bootstrap.min.js"></script>
+
+		<!-- CUSTOM NOTIFICATION -->
+		<script src="/static/js/notification/SmartNotification.min.js"></script>
+
+		<!-- JARVIS WIDGETS -->
+		<script src="/static/js/smartwidgets/jarvis.widget.min.js"></script>
+
+		<!-- EASY PIE CHARTS -->
+		<script src="/static/js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+
+		<!-- SPARKLINES -->
+		<script src="/static/js/plugin/sparkline/jquery.sparkline.min.js"></script>
+
+		<!-- JQUERY VALIDATE -->
+		<script src="/static/js/plugin/jquery-validate/jquery.validate.min.js"></script>
+
+		<!-- JQUERY MASKED INPUT -->
+		<script src="/static/js/plugin/masked-input/jquery.maskedinput.min.js"></script>
+
+		<!-- JQUERY SELECT2 INPUT -->
+		<script src="/static/js/plugin/select2/select2.min.js"></script>
+
+		<!-- JQUERY UI + Bootstrap Slider -->
+		<script src="/static/js/plugin/bootstrap-slider/bootstrap-slider.min.js"></script>
+
+		<!-- browser msie issue fix -->
+		<script src="/static/js/plugin/msie-fix/jquery.mb.browser.min.js"></script>
+
+		<!-- FastClick: For mobile devices -->
+		<script src="/static/js/plugin/fastclick/fastclick.min.js"></script>
+
+		<!--[if IE 8]>
+
+		<h1>Your browser is out of date, please update your browser by going to www.microsoft.com/download</h1>
+
+		<![endif]-->
+
+		<!-- Demo purpose only -->
+		{% include "common/javascript.html" %}
+
+		<!-- MAIN APP JS FILE -->
+		<script src="/static/js/app.min.js"></script>
+
+		<!-- ENHANCEMENT PLUGINS : NOT A REQUIREMENT -->
+		<!-- Voice command : plugin -->
+		<script src="/static/js/speech/voicecommand.min.js"></script>
+
+		<!-- SmartChat UI : plugin -->
+		<script src="/static/js/smart-chat-ui/smart.chat.ui.min.js"></script>
+		<script src="/static/js/smart-chat-ui/smart.chat.manager.min.js"></script>
+
+		<!-- PAGE RELATED PLUGIN(S) 
+		<script src="..."></script>-->
+
+		<script type="text/javascript">
+
+			$(document).ready(function() {
+			 	
+				/* DO NOT REMOVE : GLOBAL FUNCTIONS!
+				 *
+				 * pageSetUp(); WILL CALL THE FOLLOWING FUNCTIONS
+				 *
+				 * // activate tooltips
+				 * $("[rel=tooltip]").tooltip();
+				 *
+				 * // activate popovers
+				 * $("[rel=popover]").popover();
+				 *
+				 * // activate popovers with hover states
+				 * $("[rel=popover-hover]").popover({ trigger: "hover" });
+				 *
+				 * // activate inline charts
+				 * runAllCharts();
+				 *
+				 * // setup widgets
+				 * setup_widgets_desktop();
+				 *
+				 * // run form elements
+				 * runAllForms();
+				 *
+				 ********************************
+				 *
+				 * pageSetUp() is needed whenever you load a page.
+				 * It initializes and checks for all basic elements of the page
+				 * and makes rendering easier.
+				 *
+				 */
+				
+				 pageSetUp();
+				 
+				/*
+				 * ALL PAGE RELATED SCRIPTS CAN GO BELOW HERE
+				 * eg alert("my home function");
+				 * 
+				 * var pagefunction = function() {
+				 *   ...
+				 * }
+				 * loadScript("js/plugin/_PLUGIN_NAME_.js", pagefunction);
+				 * 
+				 * TO LOAD A SCRIPT:
+				 * var pagefunction = function (){ 
+				 *  loadScript(".../plugin.js", run_after_loaded);	
+				 * }
+				 * 
+				 * OR
+				 * 
+				 * loadScript(".../plugin.js", run_after_loaded);
+				 */
+				
+			})
+		
+		</script>
+
+		<!-- Your GOOGLE ANALYTICS CODE Below -->
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+				_gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
+				_gaq.push(['_trackPageview']);
+			
+			(function() {
+				var ga = document.createElement('script');
+				ga.type = 'text/javascript';
+				ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(ga, s);
+			})();
+
+		</script>
+
+	</body>
+
+</html>

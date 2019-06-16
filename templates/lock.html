@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-us" id="lock-page">
+	{% include "common/base.html" %}
+	
+	<body>
+
+		<div id="main" role="main">
+
+			<!-- MAIN CONTENT -->
+
+			<form class="lockscreen animated flipInY" action="/index">
+				<div class="logo">
+					<h1 class="semi-bold"><img src="/static/img/logo-o.png" alt="" /> SmartAdmin</h1>
+				</div>
+				<div>
+					<img src="/static/img/avatars/sunny-big.png" alt="" width="120" height="120" />
+					<div>
+						<h1><i class="fa fa-user fa-3x text-muted air air-top-right hidden-mobile"></i>John Doe <small><i class="fa fa-lock text-muted"></i> &nbsp;Locked</small></h1>
+						<p class="text-muted">
+							<a href="mailto:simmons@smartadmin">liuwei@smartadmin.com</a>
+						</p>
+
+						<div class="input-group">
+							<input class="form-control" type="password" placeholder="Password">
+							<div class="input-group-btn">
+								<button class="btn btn-primary" type="submit">
+									<i class="fa fa-key"></i>
+								</button>
+							</div>
+						</div>
+						<p class="no-margin margin-top-5">
+							Logged as someone else? <a href="/login"> Click here</a>
+						</p>
+					</div>
+
+				</div>
+				<p class="font-xs margin-top-5">
+					Copyright SmartAdmin 2014-2020.
+
+				</p>
+			</form>
+
+		</div>
+
+		<!--================================================== -->	
+
+		<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
+		<script src="/static/js/plugin/pace/pace.min.js"></script>
+
+	    <!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+	    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script> if (!window.jQuery) { document.write('<script src="/static/js/libs/jquery-2.1.1.min.js"><\/script>');} </script>
+
+	    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<script> if (!window.jQuery.ui) { document.write('<script src="/static/js/libs/jquery-ui-1.10.3.min.js"><\/script>');} </script>
+
+		<!-- IMPORTANT: APP CONFIG -->
+		<script src="/static/js/app.config.js"></script>
+
+		<!-- JS TOUCH : include this plugin for mobile drag / drop touch events 		
+		<script src="/static/js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script> -->
+
+		<!-- BOOTSTRAP JS -->		
+		<script src="/static/js/bootstrap/bootstrap.min.js"></script>
+
+		<!-- JQUERY VALIDATE -->
+		<script src="/static/js/plugin/jquery-validate/jquery.validate.min.js"></script>
+		
+		<!-- JQUERY MASKED INPUT -->
+		<script src="/static/js/plugin/masked-input/jquery.maskedinput.min.js"></script>
+		
+		<!--[if IE 8]>
+			
+			<h1>Your browser is out of date, please update your browser by going to www.microsoft.com/download</h1>
+			
+		<![endif]-->
+
+		<!-- MAIN APP JS FILE -->
+		<script src="/static/js/app.min.js"></script>
+
+	</body>
+</html>

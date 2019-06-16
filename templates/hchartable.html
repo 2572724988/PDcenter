@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	{% include "common/base.html" %}
+
+	<!--
+
+	TABLE OF CONTENTS.
+	
+	Use search to find needed section.
+	
+	===================================================================
+	
+	|  01. #CSS Links                |  all CSS links and file paths  |
+	|  02. #FAVICONS                 |  Favicon links and file paths  |
+	|  03. #GOOGLE FONT              |  Google font link              |
+	|  04. #APP SCREEN / ICONS       |  app icons, screen backdrops   |
+	|  05. #BODY                     |  body tag                      |
+	|  06. #HEADER                   |  header tag                    |
+	|  07. #PROJECTS                 |  project lists                 |
+	|  08. #TOGGLE LAYOUT BUTTONS    |  layout buttons and actions    |
+	|  09. #MOBILE                   |  mobile view dropdown          |
+	|  10. #SEARCH                   |  search field                  |
+	|  11. #NAVIGATION               |  left panel & navigation       |
+	|  12. #MAIN PANEL               |  main panel                    |
+	|  13. #MAIN CONTENT             |  content holder                |
+	|  14. #PAGE FOOTER              |  page footer                   |
+	|  15. #SHORTCUT AREA            |  dropdown shortcuts area       |
+	|  16. #PLUGINS                  |  all scripts and plugins       |
+	
+	===================================================================
+	
+	-->
+	
+	<!-- #BODY -->
+	<!-- Possible Classes
+
+		* 'smart-style-{SKIN#}'
+		* 'smart-rtl'         - Switch theme mode to RTL
+		* 'menu-on-top'       - Switch to top navigation (no DOM change required)
+		* 'no-menu'			  - Hides the menu completely
+		* 'hidden-menu'       - Hides the main menu but still accessable by hovering over left edge
+		* 'fixed-header'      - Fixes the header
+		* 'fixed-navigation'  - Fixes the main menu
+		* 'fixed-ribbon'      - Fixes breadcrumb
+		* 'fixed-page-footer' - Fixes footer
+		* 'container'         - boxed layout mode (non-responsive: will not work with fixed-navigation & fixed-ribbon)
+	-->
+	<body class="">
+
+        {% include "common/common.html" %}
+
+		<!-- MAIN PANEL -->
+		<div id="main" role="main">
+
+            {% include "common/topnav.html" %}
+			
+			
+
+			<!-- MAIN CONTENT -->
+			<div id="content">
+
+                {% include "common/commoncontent.html" %}
+				<!--
+					The ID "widget-grid" will start to initialize all widgets below 
+					You do not need to use widgets if you dont want to. Simply remove 
+					the <section></section> and you can use wells or panels instead 
+					-->
+
+				<!-- widget grid -->
+				<section id="widget-grid" class="">
+
+					<!-- row -->
+
+					<div class="row">
+
+						<div class="col-sm-12"> 
+							
+							<div class="alert alert-info">
+											
+									
+								
+									<h3 class="no-margin">jQuery HighchartTable</h3>
+								    <h5>Convert your HTML data tables into fancy Highcharts graphs without any coding!</h5>
+									<ul>
+										<li>The HighchartTable plugin takes data and attributes from a table and parses them to simply create an Hightcharts chart</li>
+										<li>Control the graph dynamically and easily without any javascript</li>
+										<li>Builds automatically during page load, all you need to do is load the plugin</li>
+										<li>See the full documentation <a href="http://highcharttable.org/#documentation" target="_blank"><strong>here <i class="fa fa-link"></i> </strong> </a></li>
+									</ul>
+								
+									
+							
+							</div>
+
+							<div class="col-sm-12 well"> 
+								<div class="col-sm-6">
+									<table class="highchart table table-hover table-bordered" data-graph-container=".. .. .highchart-container2" data-graph-type="column">
+						              <caption>Column example</caption>
+						              <thead>
+						                <tr>
+						                  <th>Month</th>
+						                  <th class="">Sales</th>
+						                  <th class="">Benefits</th>
+						                  <th class="">Expenses</th>
+						                  <th class="">Prediction</th>
+						                </tr>
+						              </thead>
+						              <tbody>
+						                <tr>
+						                  <td>January</td>
+						                  <td class="">8000</td>
+						                  <td class="">2000</td>
+						                  <td class="">1000</td>
+						                  <td class="">9000</td>
+						                </tr>
+						                <tr>
+						                  <td>February</td>
+						                  <td class="">12000</td>
+						                  <td class="">3000</td>
+						                  <td class="">1300</td>
+						                  <td class="">10000</td>
+						                </tr>
+						                <tr>
+						                  <td>March</td>
+						                  <td class="">18000</td>
+						                  <td class="">4000</td>
+						                  <td class="">1240</td>
+						                  <td class="">11000</td>
+						                </tr>
+						                <tr>
+						                  <td>April</td>
+						                  <td class="">2000</td>
+						                  <td class="">-1000</td>
+						                  <td class="">-150</td>
+						                  <td class="">13000</td>
+						                </tr>
+						                <tr>
+						                  <td>May</td>
+						                  <td class="">500</td>
+						                  <td class="">-2500</td>
+						                  <td class="">1000</td>
+						                  <td class="">14000</td>
+						                </tr>
+						                <tr>
+						                  <td>June</td>
+						                  <td class="">600</td>
+						                  <td class="">-500</td>
+						                  <td class="">-500</td>
+						                  <td class="">15000</td>
+						                </tr>
+						              </tbody>
+						            </table>
+								</div>
+								<div class="col-sm-6">
+									<div class="highchart-container2"></div>
+								</div>
+							</div>
+							
+							<div class="col-sm-12 well"> 
+								<div class="col-sm-6">
+									<table class="highchart table table-hover table-bordered" data-graph-container=".. .. .highchart-container" data-graph-type="line">
+						              <caption>Line example</caption>
+						              <thead>
+						                <tr>
+						                  <th>Month</th>
+						                  <th>Sales</th>
+						                  <th>Benefits</th>
+						                </tr>
+						              </thead>
+						              <tbody>
+						                <tr>
+						                  <td>January</td>
+						                  <td>8000</td>
+						                  <td>2000</td>
+						                </tr>
+						                <tr>
+						                  <td>February</td>
+						                  <td>12000</td>
+						                  <td>3000</td>
+						                </tr>
+						                <tr>
+						                  <td>March</td>
+						                  <td>18000</td>
+						                  <td>4000</td>
+						                </tr>
+						                <tr>
+						                  <td>April</td>
+						                  <td>2000</td>
+						                  <td>-1000</td>
+						                </tr>
+						                <tr>
+						                  <td>May</td>
+						                  <td>500</td>
+						                  <td>-2500</td>
+						                </tr>
+						              </tbody>
+						            </table>
+								</div>
+								<div class="col-sm-6">
+									<div class="highchart-container"></div>
+								</div>
+							</div>
+
+							<div class="col-sm-12 well"> 
+								<div class="col-sm-6">
+									<table class="highchart table table-hover table-bordered" data-graph-container=".. .. .highchart-container3" data-graph-type="column">
+						              <caption>Column + area example</caption>
+						              <thead>
+						                <tr>
+						                  <th>Month</th>
+						                  <th>Sales</th>
+						                  <th data-graph-type="area">Benefits</th>
+						                </tr>
+						              </thead>
+						              <tbody>
+						                <tr>
+						                  <td>January</td>
+						                  <td>8000</td>
+						                  <td>2000</td>
+						                </tr>
+						                <tr>
+						                  <td>February</td>
+						                  <td>12000</td>
+						                  <td>3000</td>
+						                </tr>
+						                <tr>
+						                  <td>March</td>
+						                  <td>18000</td>
+						                  <td>4000</td>
+						                </tr>
+						                <tr>
+						                  <td>April</td>
+						                  <td>2000</td>
+						                  <td>-1000</td>
+						                </tr>
+						                <tr>
+						                  <td>May</td>
+						                  <td>500</td>
+						                  <td>-2500</td>
+						                </tr>
+						              </tbody>
+						            </table>
+								</div>
+								<div class="col-sm-6 ">
+									<div class="highchart-container3"></div>
+								</div>
+							</div>
+
+						</div>
+						
+						<!-- end row -->
+
+					</div>
+
+					<!-- end row -->
+
+				</section>
+				<!-- end widget grid -->
+
+			</div>
+			<!-- END MAIN CONTENT -->
+
+		</div>
+		<!-- END MAIN PANEL -->
+
+
+
+		<!--================================================== -->
+
+		<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
+		<script data-pace-options='{ "restartOnRequestAfter": true }' src="/static/js/plugin/pace/pace.min.js"></script>
+
+		<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+		{% include "common/basejs.html" %}
+
+		<!-- IMPORTANT: APP CONFIG -->
+		<script src="/static/js/app.config.js"></script>
+
+		<!-- JS TOUCH : include this plugin for mobile drag / drop touch events-->
+		<script src="/static/js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script>
+
+		<!-- BOOTSTRAP JS -->
+		<script src="/static/js/bootstrap/bootstrap.min.js"></script>
+
+		<!-- CUSTOM NOTIFICATION -->
+		<script src="/static/js/notification/SmartNotification.min.js"></script>
+
+		<!-- JARVIS WIDGETS -->
+		<script src="/static/js/smartwidgets/jarvis.widget.min.js"></script>
+
+		<!-- EASY PIE CHARTS -->
+		<script src="/static/js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+
+		<!-- SPARKLINES -->
+		<script src="/static/js/plugin/sparkline/jquery.sparkline.min.js"></script>
+
+		<!-- JQUERY VALIDATE -->
+		<script src="/static/js/plugin/jquery-validate/jquery.validate.min.js"></script>
+
+		<!-- JQUERY MASKED INPUT -->
+		<script src="/static/js/plugin/masked-input/jquery.maskedinput.min.js"></script>
+
+		<!-- JQUERY SELECT2 INPUT -->
+		<script src="/static/js/plugin/select2/select2.min.js"></script>
+
+		<!-- JQUERY UI + Bootstrap Slider -->
+		<script src="/static/js/plugin/bootstrap-slider/bootstrap-slider.min.js"></script>
+
+		<!-- browser msie issue fix -->
+		<script src="/static/js/plugin/msie-fix/jquery.mb.browser.min.js"></script>
+
+		<!-- FastClick: For mobile devices -->
+		<script src="/static/js/plugin/fastclick/fastclick.min.js"></script>
+
+		<!--[if IE 8]>
+
+		<h1>Your browser is out of date, please update your browser by going to www.microsoft.com/download</h1>
+
+		<![endif]-->
+
+		<!-- Demo purpose only -->
+		{% include "common/javascript.html" %}
+
+		<!-- MAIN APP JS FILE -->
+		<script src="/static/js/app.min.js"></script>
+
+		<!-- ENHANCEMENT PLUGINS : NOT A REQUIREMENT -->
+		<!-- Voice command : plugin -->
+		<script src="/static/js/speech/voicecommand.min.js"></script>
+
+		<!-- SmartChat UI : plugin -->
+		<script src="/static/js/smart-chat-ui/smart.chat.ui.min.js"></script>
+		<script src="/static/js/smart-chat-ui/smart.chat.manager.min.js"></script>
+
+		<!-- PAGE RELATED PLUGIN(S) 
+		<script src="..."></script>-->
+		<script src="/static/js/plugin/highChartCore/highcharts-custom.min.js"></script>
+		<script src="/static/js/plugin/highchartTable/jquery.highchartTable.min.js"></script>
+
+		<script type="text/javascript">
+
+			$(document).ready(function() {
+			 	
+				/* DO NOT REMOVE : GLOBAL FUNCTIONS!
+				 *
+				 * pageSetUp(); WILL CALL THE FOLLOWING FUNCTIONS
+				 *
+				 * // activate tooltips
+				 * $("[rel=tooltip]").tooltip();
+				 *
+				 * // activate popovers
+				 * $("[rel=popover]").popover();
+				 *
+				 * // activate popovers with hover states
+				 * $("[rel=popover-hover]").popover({ trigger: "hover" });
+				 *
+				 * // activate inline charts
+				 * runAllCharts();
+				 *
+				 * // setup widgets
+				 * setup_widgets_desktop();
+				 *
+				 * // run form elements
+				 * runAllForms();
+				 *
+				 ********************************
+				 *
+				 * pageSetUp() is needed whenever you load a page.
+				 * It initializes and checks for all basic elements of the page
+				 * and makes rendering easier.
+				 *
+				 */
+				
+				 pageSetUp();
+				 
+				/*
+				 * ALL PAGE RELATED SCRIPTS CAN GO BELOW HERE
+				 * eg alert("my home function");
+				 * 
+				 * var pagefunction = function() {
+				 *   ...
+				 * }
+				 * loadScript("js/plugin/_PLUGIN_NAME_.js", pagefunction);
+				 * 
+				 * TO LOAD A SCRIPT:
+				 * var pagefunction = function (){ 
+				 *  loadScript(".../plugin.js", run_after_loaded);	
+				 * }
+				 * 
+				 * OR
+				 * 
+				 * loadScript(".../plugin.js", run_after_loaded);
+				 */
+
+				 $('table.highchart').highchartTable();
+				
+			})
+		
+		</script>
+
+		<!-- Your GOOGLE ANALYTICS CODE Below -->
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+				_gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
+				_gaq.push(['_trackPageview']);
+			
+			(function() {
+				var ga = document.createElement('script');
+				ga.type = 'text/javascript';
+				ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(ga, s);
+			})();
+
+		</script>
+
+	</body>
+
+</html>
